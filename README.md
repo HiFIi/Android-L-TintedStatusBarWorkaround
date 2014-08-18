@@ -8,15 +8,15 @@ Android-L-TintedStatusBarWorkaround
 How did I do it?
 ----------------
 
-in your values/styles.xml folder (or in your values-v19,styles.xml folder/file), enter the following:
+in your values/styles.xml folder (**or** in your values-v19.styles.xml folder/file), enter the following:
 
     <item name="android:fitsSystemWindows">true</item>
     <item name="android:windowTranslucentStatus">true</item>
 
 After that, take a look at my l_statusbar_tint_workaround.xml file.
-You'll realize that I have a framelayout as the main parent of the RelativeLayout.
+You'll realize that I have a FrameLayout as the main parent of the RelativeLayout.
 
-The background color of the FrameLayout defines the color above the top of the StatusBar.
+The background color of the FrameLayout defines the color above the top of the Actionbar.
 
 Here's an example:
 
@@ -31,13 +31,15 @@ Here's an example:
     </FrameLayout>
     
 
-And put your main layout stuff inside of the FrameLayout.
+Put your main layout stuff inside of the FrameLayout.
 
-See how easy that was? :)
+See how easy that was? ;)
+
 
 **If you want to quickly download an .apk and try it for yourself, the .apk is inside of the Build/AppVersions folder.**
 
-If you have any questions, feel free to ask me, as I'll likely be doing more tutorials in the near future.
+
+*If you have any questions, feel free to ask me, as I'll likely be doing more tutorials in the near future.*
 
 Hope this helped!
 
